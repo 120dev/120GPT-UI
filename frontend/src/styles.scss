@@ -1,0 +1,49 @@
+@import "/../node_modules/bootstrap/scss/bootstrap";
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #444654;
+}
+
+.message-user {
+    background-color: #343541;
+    border: 1px solid #b3e0ff;
+}
+
+.message-system {
+    background-color: #444654;
+    border: 1px solid #d9b3ff;
+}
+
+.code-highlight {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.copy-btn {
+    background-color: #f7f7f7;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+body {
+    background-color: #202123;
+    color: white;
+}
+
+pre code {
+    background-color: black;
+    padding: 10px;
+    display: block;
+}
+
+@import "/node_modules/highlight.js/styles/obsidian.css"; // ou un autre thème de votre choix
+
+

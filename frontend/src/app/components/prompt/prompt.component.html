@@ -1,0 +1,13 @@
+<div id="output" #output class="container">
+    <div *ngFor="let message of messages" [ngClass]="'message message-' + message.role">
+        <div [innerHTML]="message.content"></div>
+        <button *ngIf="message.isCode" class="copy-btn" (click)="copyCode($event)">Copier</button>
+    </div>
+
+    <div class="floating-textarea-container">
+        <div class="form-group">
+            <textarea class="form-control" #inputText rows="2" placeholder="Entrez votre texte ici">quel est le model de gpt utilises tu ?</textarea>
+            <button class="btn btn-primary" (click)="sendToServer()">Envoyer</button>
+        </div>
+    </div>
+</div>

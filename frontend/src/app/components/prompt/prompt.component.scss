@@ -1,0 +1,41 @@
+
+
+/* Conserver la couleur d'arrière-plan lors du focus */
+textarea.form-control:focus {
+    background-color: #40414F;
+    color: white; /* Définir la couleur du texte en blanc lors du focus */
+    border-color: #40414F; /* Optionnel: Si vous souhaitez également conserver la couleur de la bordure lors du focus */
+    box-shadow: none; /* Optionnel: Pour supprimer l'ombre portée qui pourrait être appliquée par défaut lors du focus */
+}
+
+/* Définir la couleur d'arrière-plan par défaut et la couleur du texte */
+textarea.form-control {
+    background-color: #40414F;
+    color: white;
+}
+
+
+.floating-textarea-container {
+    position: fixed;
+    bottom: 10px; /* Espacement du bas */
+    left: 50%; /* Centrage horizontal */
+    transform: translateX(-50%); /* Centrage horizontal */
+    width: 90%; /* Largeur du conteneur */
+    background-color: #343641; /* Couleur de fond */
+    padding: 10px; /* Espacement intérieur */
+    border-radius: 15px; /* Arrondissement des angles du conteneur */
+}
+
+.rounded-textarea {
+    border-radius: 15px; /* Arrondissement des angles du textarea */
+}
+
+#output {
+    margin-bottom: 150px; /* Marge en bas pour éviter que le textarea ne masque le contenu */
+}
+
+#scrollContainer {
+    height: 500px; /* Ajustez cette valeur en fonction de vos besoins */
+    overflow-y: auto;
+}
+
